@@ -1,0 +1,36 @@
+<img src="../images/burger.png" alt="burger">
+
+<div class="m-2" style="font-size: 22px; color: red;">Eat Da Burger</div>
+
+<div class="row">
+	<div class="col-lg-3"></div>
+	<div class="col-lg-3">
+		<div class="card" style="width: 18rem;">
+			<ul class="list-group list-group-flush">
+			  {{#each burgers}}
+              {{#unless devoured}}
+              {{> burgers/burger-block devoure=true}}
+              {{/unless}}
+              {{/each}}
+			</ul>
+        </div>
+	</div>
+	<div class="col-lg-3">
+		<div class="card" style="width: 18rem;">
+			<ul class="list-group list-group-flush">
+			  {{#each burgers}}
+              {{#if devoured}}
+              {{> burgers/burger-block devoure=false}}
+              {{/if}}
+              {{/each}}
+			</ul>
+	    </div>
+	</div>
+	<div class="col-lg-3"></div>
+</div>
+
+<div class="form-group mt-3">
+    <label for="exampleFormControlTextarea1">Create a new burger!</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 30%; margin: auto;"></textarea>
+    <button type="button" class="btn btn-primary mt-2">Create Burger!</button>
+</div>
