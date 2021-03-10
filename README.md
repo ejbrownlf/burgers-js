@@ -18,7 +18,9 @@ To use this app go to https://ejbrownlf-burgers.herokuapp.com/
 
 In the bottom text area write the name of your new burger and it will appear in the left hand column along any other burgers in that list with a button that says devour. Click the devour button and it will move the right hand column and stay with all burgers that have been devoured.
 
-![Start of generated README](./public/images/Screenshot_1.png)
+Link to my portfolio: https://ejbrownlf.github.io/pages/portfolio.html
+
+![Site Screenshot](./public/images/Screenshot_1.png)
 
 
 # License
